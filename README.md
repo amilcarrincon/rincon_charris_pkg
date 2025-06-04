@@ -1,1 +1,2 @@
 # rincon_charris_pkg
+Este proyecto utiliza el dataset r2b_robotarm del R2B Dataset 2024 de NVIDIA (https://catalog.ngc.nvidia.com/orgs/nvidia/teams/isaac/resources/r2bdataset2024), que contiene datos sensoriales y de control de un brazo robótico. Me llamó la atención este dataset porque permite trabajar con percepción visual y control de actuadores en un entorno simulado que se aproxima a la realidad, lo cual resulta ideal para comenzar a explorar conceptos fundamentales de ROS 2.
