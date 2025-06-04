@@ -16,3 +16,15 @@ paso 2: Descargar el dataset:
   ./ngc-cli/ngc registry resource download-version "nvidia/isaac/r2bdataset2024:1"
   
 paso 3: Ubicar la carpeta r2bdataset2024_v1/ en el mismo nivel que rincon_charris_pkg/
+
+## Para lanzar
+Para lanzar y contruir se corren los siguientes comandos: 
+
+cd ~/ros2_ws
+
+colcon build --packages-select rincon_charris_pkg
+
+source install/setup.bash
+
+ros2 launch rincon_charris_pkg play_r2b_robotarm.launch.py
+
