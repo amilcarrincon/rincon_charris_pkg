@@ -12,17 +12,19 @@ setup(
         ('share/ament_index/resource_index/packages',
          ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        # 👇 ESTA línea es clave para incluir launch files
         (os.path.join('share', package_name, 'launch'), glob('launch/*.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='user',  # pon tu nombre si quieres
-    maintainer_email='user@todo.todo',
-    description='Paquete de ejemplo con rosbag',
+    maintainer='Amílcar Rincón',
+    maintainer_email='amilcar@ejemplo.com',
+    description='Paquete de ejemplo con rosbag y nodos personalizados',
     license='MIT',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [],
+        'console_scripts': [
+            'procesador_vision = rincon_charris_pkg.procesador_vision:main',
+            'controlador_brazo = rincon_charris_pkg.controlador_brazo:main',
+        ],
     },
 )
